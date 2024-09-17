@@ -41,7 +41,8 @@ class DragScroll {
     const gap = getNumericCssValue(this.wrap, '--gap');
 
     this.progress = 0;
-    this.wrapWidth = this.items[0].clientWidth * this.items.length - gap;
+    this.wrapWidth =
+      (this.items[0].clientWidth + gap) * this.items.length - gap;
     this.wrap.style.width = `${this.wrapWidth}px`;
     this.maxScroll = this.wrapWidth - this.el.clientWidth;
   }
