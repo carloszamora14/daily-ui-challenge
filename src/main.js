@@ -13,7 +13,7 @@ function populateSliderWrapper(data) {
 
     const img = document.createElement('img');
     img.className = 'slider-item__image';
-    img.src = `../assets/designs/design-${design.id}.png`;
+    img.src = `./assets/designs/design-${design.id}.png`;
     img.alt = design.description;
 
     figure.appendChild(img);
